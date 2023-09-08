@@ -1,0 +1,37 @@
+
+> core-js@2.6.12 postinstall D:\A_TUAN\REACT_JS\CHISFIS\Chisfis\node_modules\babel-runtime\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@3.15.2 postinstall D:\A_TUAN\REACT_JS\CHISFIS\Chisfis\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.15.2 postinstall D:\A_TUAN\REACT_JS\CHISFIS\Chisfis\node_modules\core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall D:\A_TUAN\REACT_JS\CHISFIS\Chisfis\node_modules\ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
++ react-dom@17.0.2
++ react@17.0.2
++ moment@2.29.1
++ react-dates@21.8.0
+added 331 packages from 140 contributors, removed 262 packages, updated 1607 packages and audited 1969 packages in 211.943s
+
+157 packages are looking for funding
+  run `npm fund` for details
+
+found 5 vulnerabilities (4 moderate, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
