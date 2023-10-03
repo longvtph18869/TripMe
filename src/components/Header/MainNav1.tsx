@@ -18,7 +18,7 @@ const MainNav1: FC<MainNav1Props> = ({ className = "" }) => {
   return (
     <div className={`nc-MainNav1 relative z-10 ${className}`} style={{ "borderBottom": "1px solid #eee" }}>
       <div className="px-4 lg:container py-2 lg:py-2 relative flex justify-between items-center">
-        <div className="flex justify-start flex-1 items-center space-x-4 sm:space-x-10">
+        <div className="hidden md:flex justify-start flex-1 items-center space-x-4 sm:space-x-10">
           <Logo />
 
           <form style={{width: "500px", marginLeft:"50px"}}>
@@ -44,7 +44,7 @@ const MainNav1: FC<MainNav1Props> = ({ className = "" }) => {
           <HeroSearchForm2MobileFactory />
         </div> */}
 
-        <div className="md:flex flex-shrink-0 items-center justify-end flex-1 lg:flex-none text-neutral-700 dark:text-neutral-100">
+        <div className="hidden md:flex flex-shrink-0 items-center justify-end flex-1 lg:flex-none text-neutral-700 dark:text-neutral-100">
           <div className="hidden xl:flex items-center space-x-0.5">
             <SwitchDarkMode />
             {/* <SearchDropdown /> */}
@@ -62,7 +62,7 @@ const MainNav1: FC<MainNav1Props> = ({ className = "" }) => {
         </div>
       </div>
       <div className="px-4 lg:container py-2 lg:py-2 relative flex justify-between items-center">
-            <div className="md:flex justify-start flex-1 items-center space-x-4 sm:space-x-10"><Navigation />
+            <div className=" md:flex justify-start flex-1 items-center space-x-4 sm:space-x-10"><Navigation />
             </div></div>
     </div>
   );
