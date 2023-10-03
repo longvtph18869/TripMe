@@ -264,21 +264,23 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
         target={item.targetBlank ? "_blank" : undefined}
         rel="noopener noreferrer"
         className={({ isActive }) =>
-          `inline-flex items-center text-sm xl:text-base font-normal text-neutral-700 dark:text-neutral-300 py-2 px-4 xl:px-5 rounded-full hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 ${
-            isActive
-              ? "!font-semibold !text-neutral-900 bg-neutral-100 dark:bg-neutral-800 dark:!text-neutral-100"
-              : ""
-          }`
+          `inline-flex items-center text-sm xl:text-sm font-medium text-neutral-700 dark:text-neutral-300 py-2 px-4 xl:px-5 rounded-full hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 
+          `
+          // ${
+          //   isActive
+          //     ? "!font-semibold !text-neutral-900 bg-neutral-100 dark:bg-neutral-800 dark:!text-neutral-100"
+          //     : ""
+          // }
         }
         to={item.href || "/"}
       >
         {item.name}
-        {item.type && (
+        {/* {item.type && (
           <ChevronDownIcon
             className="ml-1 -mr-1 h-4 w-4 text-neutral-400"
             aria-hidden="true"
           />
-        )}
+        )} */}
       </NavLink>
     );
   };

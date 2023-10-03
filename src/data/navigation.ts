@@ -188,23 +188,15 @@ const templatesChildrenMenus: NavItemType[] = [
 export const NAVIGATION_DEMO: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/",
-    name: "Home",
-    type: "dropdown",
-    children: demoChildMenus,
-    isNew: true,
-  },
-  {
-    id: ncNanoId(),
     href: "/unique_id_",
-    name: "Five columns",
+    name: "Bạn muốn đi đâu?",
     type: "megaMenu",
     megaMenu: megaMenuDemo,
   },
   {
     id: ncNanoId(),
     href: "/listing-stay",
-    name: "Listing Page",
+    name: "Tất cả",
     type: "dropdown",
     isNew: true,
     children: [
@@ -296,7 +288,7 @@ export const NAVIGATION_DEMO: NavItemType[] = [
   {
     id: ncNanoId(),
     href: "/author",
-    name: "Templates",
+    name: "Tour và Trải nghiệm",
     type: "dropdown",
     children: templatesChildrenMenus,
   },
@@ -304,7 +296,35 @@ export const NAVIGATION_DEMO: NavItemType[] = [
   {
     id: ncNanoId(),
     href: "/blog",
-    name: "Other pages",
+    name: "Khách sạn",
+    type: "dropdown",
+    children: otherPageChildMenus,
+  },
+  {
+    id: ncNanoId(),
+    href: "/blog",
+    name: "Đặt xe",
+    type: "dropdown",
+    children: otherPageChildMenus,
+  },
+  {
+    id: ncNanoId(),
+    href: "/blog",
+    name: "Máy bay",
+    type: "dropdown",
+    children: otherPageChildMenus,
+  },
+  {
+    id: ncNanoId(),
+    href: "/blog",
+    name: "Ẩm thực",
+    type: "dropdown",
+    children: otherPageChildMenus,
+  },
+  {
+    id: ncNanoId(),
+    href: "/blog",
+    name: "Dịch vụ du lịch",
     type: "dropdown",
     children: otherPageChildMenus,
   },

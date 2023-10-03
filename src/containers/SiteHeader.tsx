@@ -213,9 +213,8 @@ const SiteHeader = () => {
   return (
     <>
       <Helmet>
-        <title>Chisfis || Booking React Template</title>
+        <title>Klook - Du Lịch Tự Túc, Vé Tham Quan, Tour và Hơn Thế Nữa- Klook</title>
       </Helmet>
-      {renderControlSelections()}
       {renderHeader()}
       <div ref={anchorRef} className="h-1 absolute invisible"></div>
     </>
