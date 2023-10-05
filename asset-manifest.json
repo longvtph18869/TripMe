@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TripMe/static/css/main.cd76c2cc.css",
-    "main.js": "/TripMe/static/js/main.35c9dc3c.js",
+    "main.css": "/TripMe/static/css/main.ac8c392d.css",
+    "main.js": "/TripMe/static/js/main.af227c04.js",
     "static/js/496.e47ef3da.chunk.js": "/TripMe/static/js/496.e47ef3da.chunk.js",
     "static/media/appRightImg.png": "/TripMe/static/media/appRightImg.f5d741048b5794574f4c.png",
     "static/media/hero-right-3.png": "/TripMe/static/media/hero-right-3.25e989ed2b6ef0cfb25e.png",
@@ -91,12 +91,12 @@
     "index.html": "/TripMe/index.html",
     "static/media/Facebook.svg": "/TripMe/static/media/Facebook.1a707b6f565f3d903a12c1113f251b48.svg",
     "static/media/VectorHIW.svg": "/TripMe/static/media/VectorHIW.acaf608f045f9f6e33cbddebbae375e7.svg",
-    "main.cd76c2cc.css.map": "/TripMe/static/css/main.cd76c2cc.css.map",
-    "main.35c9dc3c.js.map": "/TripMe/static/js/main.35c9dc3c.js.map",
+    "main.ac8c392d.css.map": "/TripMe/static/css/main.ac8c392d.css.map",
+    "main.af227c04.js.map": "/TripMe/static/js/main.af227c04.js.map",
     "496.e47ef3da.chunk.js.map": "/TripMe/static/js/496.e47ef3da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd76c2cc.css",
-    "static/js/main.35c9dc3c.js"
+    "static/css/main.ac8c392d.css",
+    "static/js/main.af227c04.js"
   ]
 }
