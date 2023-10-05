@@ -68,30 +68,30 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
 
   const renderEditTime = (field: Fields) => {
     const times = [
-      "12:00 AM",
-      "1:00 AM",
-      "2:00 AM",
-      "3:00 AM",
-      "4:00 AM",
-      "5:00 AM",
-      "6:00 AM",
-      "7:00 AM",
-      "8:00 AM",
-      "9:00 AM",
-      "10:00 AM",
-      "11:00 AM",
-      "12:00 PM",
-      "1:00 PM",
-      "2:00 PM",
-      "3:00 PM",
-      "4:00 PM",
-      "5:00 PM",
-      "6:00 PM",
-      "7:00 PM",
-      "8:00 PM",
-      "9:00 PM",
-      "10:00 PM",
-      "11:00 PM",
+      "0:00",
+      "1:00",
+      "2:00",
+      "3:00",
+      "4:00",
+      "5:00",
+      "6:00",
+      "7:00",
+      "8:00",
+      "9:00",
+      "10:00",
+      "11:00",
+      "12:00",
+      "13:00",
+      "14:00",
+      "15:00",
+      "16:00",
+      "17:00",
+      "18:00",
+      "19:00",
+      "20:00",
+      "21:00",
+      "22:00",
+      "23:00",
     ];
     let timeValue = stateTimeRage.startTime;
     if (field === "dropOff") {
@@ -122,7 +122,7 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
       >
         <Listbox.Button className="focus:outline-none inline-flex items-center group">
           <span className="text-base font-semibold">{`, ` + timeValue}</span>
-          <span className="ml-1 absolute z-20 left-full top-0 text-neutral-400 group-hover:text-neutral-900 dark:group-hover:text-neutral-100">
+          <span className="ml-1 absolute z-20 left-full text-neutral-400 group-hover:text-neutral-900 dark:group-hover:text-neutral-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -140,33 +140,30 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
           </span>
         </Listbox.Button>
 
-        <Listbox.Options className="absolute z-40 min-w-max py-1 mt-5 overflow-auto text-base bg-white dark:bg-neutral-800 rounded-md shadow-lg max-h-60 ring-1 ring-black/5 dark:ring-white/20 focus:outline-none sm:text-sm">
+        <Listbox.Options className="choose-time absolute z-40 min-w-max py-1 mt-5 overflow-auto text-base bg-white dark:bg-neutral-800 rounded-md shadow-lg max-h-60 ring-1 ring-black/5 dark:ring-white/20 focus:outline-none sm:text-sm">
           {times.map((time, index) => (
             <Listbox.Option
               key={index}
               className={({ active }) =>
-                `${
-                  active
-                    ? "text-amber-900 bg-amber-100"
-                    : "text-gray-900 dark:text-neutral-200"
-                } cursor-default select-none relative py-2 pl-10 pr-4`
+                `${active
+                  ? "text-amber-900 bg-amber-100"
+                  : "text-gray-900 dark:text-neutral-200"
+                } cursor-default select-none relative py-2 pl-4 pr-4`
               }
               value={time}
             >
               {({ selected, active }) => (
                 <>
                   <span
-                    className={`${
-                      selected ? "font-medium" : "font-normal"
-                    } block truncate`}
+                    className={`${selected ? "font-medium" : "font-normal"
+                      } block truncate`}
                   >
                     {time}
                   </span>
                   {selected ? (
                     <span
-                      className={`${
-                        active ? "text-amber-600" : "text-amber-600"
-                      }  absolute inset-y-0 left-0 flex items-center pl-3`}
+                      className={`${active ? "text-amber-600" : "text-amber-600"
+                        }  absolute inset-y-0 left-0 flex items-center pl-3`}
                     >
                       <CheckIcon className="w-5 h-5" aria-hidden="true" />
                     </span>
@@ -184,9 +181,8 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
     const focused = focusedInput === "startDate";
     return (
       <div
-        className={`flex flex-1 relative  ${fieldClassName} items-center space-x-3 cursor-pointer ${
-          focused ? "nc-hero-field-focused" : " "
-        }`}
+        className={`flex flex-1 relative  ${fieldClassName} items-center space-x-3 cursor-pointer ${focused ? "nc-hero-field-focused" : " "
+          }`}
       >
         <div className="text-neutral-300 dark:text-neutral-400">
           <svg
@@ -206,19 +202,18 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
         </div>
         <div className="flex-1">
           <div className="absolute inset-0" />
-
+          <span className="block mt-1 text-sm text-neutral-400 font-light leading-none">
+            {stateDate.startDate ? "Bắt đầu" : `Chọn ngày`}
+          </span>
           <div className="inline-flex items-center text-base xl:text-lg font-semibold">
             <span className="flex-shrink-0">
               {stateDate.startDate
-                ? stateDate.startDate.format("DD MMM")
-                : "Pick up"}
+                ? stateDate.startDate.format("DD") + " tháng " + stateDate.startDate.format("MM")
+                : "Bắt đầu"}
             </span>
             {stateDate.startDate && renderEditTime("pickUp")}
           </div>
 
-          <span className="block mt-1 text-sm text-neutral-400 font-light leading-none">
-            {stateDate.startDate ? "Pick up" : `Add date`}
-          </span>
         </div>
       </div>
     );
@@ -228,9 +223,8 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
     const focused = focusedInput === "endDate";
     return (
       <div
-        className={`flex relative flex-[1.8] items-center cursor-pointer ${
-          focused ? "nc-hero-field-focused" : " "
-        }`}
+        className={`flex relative flex-[1.8] items-center cursor-pointer ${focused ? "nc-hero-field-focused" : " "
+          }`}
       >
         <div className={`flex-1 flex ${fieldClassName} space-x-3 items-center`}>
           <div className="text-neutral-300 dark:text-neutral-400">
@@ -251,18 +245,17 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
           </div>
           <div className="flex-1">
             <div className="absolute inset-0" />
-
+            <span className="block mt-1 text-sm text-neutral-400 font-light leading-none">
+              {stateDate.endDate ? "Kết thúc" : `Chọn ngày`}
+            </span>
             <div className="inline-flex items-center text-base xl:text-lg font-semibold">
               <span className="flex-shrink-0">
                 {stateDate.endDate
-                  ? stateDate.endDate.format("DD MMM")
-                  : "Drop off"}
+                  ? stateDate.endDate.format("DD") + " tháng " + stateDate.endDate.format("MM")
+                  : "Kết thúc"}
               </span>
               {stateDate.endDate && renderEditTime("dropOff")}
             </div>
-            <span className="block mt-1 text-sm text-neutral-400 font-light leading-none">
-              {stateDate.endDate ? "Drop off" : `Add date`}
-            </span>
           </div>
         </div>
         {hasButtonSubmit && (
@@ -276,12 +269,13 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
 
   return (
     <div
-      className={`RentalCarDatesRangeInput relative flex z-10 ${className}  ${
-        !!focusedInput ? "nc-date-focusedInput" : "nc-date-not-focusedInput"
-      }`}
+      className={`RentalCarDatesRangeInput relative flex z-10 ${className}  ${!!focusedInput ? "nc-date-focusedInput" : "nc-date-not-focusedInput"
+        }`}
     >
       <div className="absolute inset-0 flex">
         <DateRangePicker
+          monthFormat={"TMM YYYY"}
+          weekDayFormat={"TD"}
           startDate={stateDate.startDate}
           endDate={stateDate.endDate}
           focusedInput={focusedInput}

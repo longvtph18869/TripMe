@@ -57,7 +57,7 @@ const StayCard: FC<StayCardProps> = ({
       <div className={size === "default" ? "p-4 space-y-4" : "p-3 space-y-2"}>
         <div className="space-y-2">
           <span className="text-sm text-neutral-500 dark:text-neutral-400">
-            {listingCategory.name} · {bedrooms} beds
+            {listingCategory.name} · {bedrooms} giường
           </span>
           <div className="flex items-center space-x-2">
             {isAds && <Badge name="ADS" color="green" />}

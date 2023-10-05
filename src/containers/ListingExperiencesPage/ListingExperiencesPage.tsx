@@ -81,8 +81,8 @@ const ListingExperiencesPage: FC<ListingExperiencesPageProps> = ({
       <div className="container relative">
         {/* SECTION HERO */}
         <SectionHeroArchivePage
-          currentPage="Experiences"
-          currentTab="Experiences"
+          currentPage="Tour du lịch"
+          currentTab="Tour du lịch"
           listingType={
             <>
               <i className="text-2xl las la-umbrella-beach"></i>

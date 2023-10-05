@@ -25,7 +25,7 @@ export interface FlightSearchFormProps {
 
 const flightClass = [
   {
-    name: "Economy",
+    name: "",
     href: "##",
   },
   {
@@ -49,8 +49,8 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
     endDate: null,
   });
   const [timeRangeValue, setTimeRangeValue] = useState<TimeRage>({
-    startTime: "10:00 AM",
-    endTime: "10:00 AM",
+    startTime: "10:00",
+    endTime: "10:00",
   });
   const [pickUpInputValue, setPickUpInputValue] = useState("");
   const [dropOffInputValue, setDropOffInputValue] = useState("");
@@ -89,7 +89,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
             px-4 py-1.5 rounded-md inline-flex items-center font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 text-xs`}
                 onClick={() => document.querySelector("html")?.click()}
               >
-                <span>{`${guests} Guest`}</span>
+                <span>{`${guests} Người`}</span>
                 <ChevronDownIcon
                   className={`${
                     open ? "" : "text-opacity-70"
@@ -194,7 +194,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
           }`}
           onClick={(e) => setDropOffLocationType("roundTrip")}
         >
-          Round-trip
+          Khứ hồi
         </div>
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer mr-2 my-1 sm:mr-4 ${
@@ -204,11 +204,11 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
           }`}
           onClick={(e) => setDropOffLocationType("oneWay")}
         >
-          One-way
+          Một chiều
         </div>
-        <div className=" mr-2 my-1 sm:mr-4 border border-neutral-300 dark:border-neutral-700 rounded-full">
+        {/* <div className=" mr-2 my-1 sm:mr-4 border border-neutral-300 dark:border-neutral-700 rounded-full">
           {renderSelectClass()}
-        </div>
+        </div> */}
         <div className="my-1 border border-neutral-300 dark:border-neutral-700 rounded-full">
           {renderGuest()}
         </div>
@@ -227,15 +227,15 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
                 defaultValue={pickUpInputValue}
                 onChange={(e) => setPickUpInputValue(e)}
                 onInputDone={() => setFieldFocused("dropOffInput")}
-                placeHolder="Flying from"
-                desc="Where do you want to fly from?"
+                placeHolder="Điểm đi"
+                desc="Bạn muốn bay từ đâu?"
               />
               <LocationInput
                 defaultValue={dropOffInputValue}
                 onChange={(e) => setDropOffInputValue(e)}
                 onInputDone={() => setFieldFocused("startDate")}
-                placeHolder="Flying to"
-                desc="Where you want to fly to?"
+                placeHolder="Điểm đến"
+                desc="Bạn muốn bay đến đâu?"
                 autoFocus={fieldFocused === "dropOffInput"}
               />
             </div>

@@ -7,7 +7,7 @@ import HeroSearchForm, {
 export interface SectionHeroArchivePageProps {
   className?: string;
   listingType?: ReactNode;
-  currentPage: "Khách sạn" | "Experiences" | "Cars" | "Flights";
+  currentPage: "Khách sạn" | "Tour du lịch" | "Đặt xe" | "Máy bay";
   currentTab: SearchTab;
   rightImage?: string;
 }

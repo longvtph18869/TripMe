@@ -55,9 +55,8 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
     const focused = focusedInput === "startDate";
     return (
       <div
-        className={`relative flex ${fieldClassName} items-center space-x-3 cursor-pointer ${
-          focused ? "nc-hero-field-focused" : " "
-        }`}
+        className={`relative flex ${fieldClassName} items-center space-x-3 cursor-pointer ${focused ? "nc-hero-field-focused" : " "
+          }`}
       >
         <div className="text-neutral-300 dark:text-neutral-400">
           <svg
@@ -76,13 +75,13 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
           </svg>
         </div>
         <div className="flex-1">
+        <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
+            {stateDate.startDate ? "Ngày nhận" : `Chọn ngày`}
+          </span>
           <span className="block xl:text-lg font-semibold">
             {stateDate.startDate
-              ? stateDate.startDate.format("DD MMM")
-              : "Check in"}
-          </span>
-          <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
-            {stateDate.startDate ? "Check in" : `Add date`}
+              ? stateDate.startDate.format("DD") + " tháng " + stateDate.startDate.format("MM")
+              : "Ngày nhận"}
           </span>
         </div>
       </div>
@@ -93,9 +92,8 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
     const focused = focusedInput === "endDate";
     return (
       <div
-        className={`relative flex ${fieldClassName} items-center space-x-3 cursor-pointer ${
-          focused ? "nc-hero-field-focused" : " "
-        }`}
+        className={`relative flex ${fieldClassName} items-center space-x-3 cursor-pointer ${focused ? "nc-hero-field-focused" : " "
+          }`}
       >
         <div className="text-neutral-300 dark:text-neutral-400">
           <svg
@@ -114,27 +112,29 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
           </svg>
         </div>
         <div className="flex-1">
+        <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
+            {stateDate.endDate ? "Ngày trả" : `Chọn ngày`}
+          </span>
           <span className="block xl:text-lg font-semibold">
             {stateDate.endDate
-              ? stateDate.endDate.format("DD MMM")
-              : "Check out"}
-          </span>
-          <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
-            {stateDate.endDate ? "Check out" : `Add date`}
+              ? stateDate.endDate.format("DD") + " tháng " + stateDate.endDate.format("MM")
+              : "Ngày trả"}
           </span>
         </div>
       </div>
     );
   };
-
   return (
     <div
-      className={`StayDatesRangeInput relative flex z-10 ${className} ${
-        !!focusedInput ? "nc-date-focusedInput" : "nc-date-not-focusedInput"
-      }`}
+      className={`StayDatesRangeInput relative flex z-10 ${className} ${!!focusedInput ? "nc-date-focusedInput" : "nc-date-not-focusedInput"
+        }`}
     >
-      <div className="absolute inset-0 flex">
+      <div className="absolute inset-0 flex ">
         <DateRangePicker
+          monthFormat={"TMM YYYY"}
+          weekDayFormat={"TD"}
+          firstDayOfWeek={1}
+          
           startDate={stateDate.startDate}
           endDate={stateDate.endDate}
           focusedInput={focusedInput}
@@ -165,7 +165,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
         />
       </div>
 
-      <div className={`flex-1 grid grid-cols-2 relative ${wrapClassName}`}>
+      <div className={`flex-1 grid grid-cols-2 relative cursor-pointer ${wrapClassName}`}>
         {renderInputCheckInDate()}
         {renderInputCheckOutDate()}
       </div>

@@ -1,4 +1,5 @@
 import React, { HTMLAttributes, ReactNode } from "react";
+import ButtonSecondary from "shared/Button/ButtonSecondary";
 import NextPrev from "shared/NextPrev/NextPrev";
 
 export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
@@ -11,7 +12,7 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
 const Heading: React.FC<HeadingProps> = ({
   children,
   desc = "Popular places to stay that Chisfis recommends for you",
-  className = "mb-12 lg:mb-16 text-neutral-900 dark:text-neutral-50",
+  className = "mb-5 lg:mb-7 text-neutral-900 dark:text-neutral-50",
   isCenter = false,
   hasNextPrev = false,
   ...args
@@ -25,20 +26,21 @@ const Heading: React.FC<HeadingProps> = ({
           isCenter ? "text-center w-full max-w-2xl mx-auto" : "max-w-2xl"
         }
       >
-        <h2 className={`text-3xl md:text-4xl font-semibold`} {...args}>
+        <h2 className={`text-xl md:text-2xl font-semibold`} {...args}>
           {children || `Section Heading`}
         </h2>
-        {desc && (
+        {/* {desc && (
           <span className="mt-2 md:mt-3 font-normal block text-base sm:text-xl text-neutral-500 dark:text-neutral-400">
             {desc}
           </span>
-        )}
+        )} */}
       </div>
-      {hasNextPrev && !isCenter && (
-        <div className="mt-4 flex justify-end sm:ml-2 sm:mt-0 flex-shrink-0">
-          <NextPrev onClickNext={() => {}} onClickPrev={() => {}} />
-        </div>
-      )}
+      <span className="hidden sm:block flex-shrink-0">
+          <ButtonSecondary className="!leading-none">
+            <span>View all</span>
+            <i className="ml-3 las la-arrow-right text-xl"></i>
+          </ButtonSecondary>
+        </span>
     </div>
   );
 };

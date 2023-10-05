@@ -32,8 +32,8 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
     endDate: null,
   });
   const [timeRangeValue, setTimeRangeValue] = useState<TimeRage>({
-    startTime: "10:00 AM",
-    endTime: "10:00 AM",
+    startTime: "10:00",
+    endTime: "10:00",
   });
   const [pickUpInputValue, setPickUpInputValue] = useState("");
   const [dropOffInputValue, setDropOffInputValue] = useState("");
@@ -69,7 +69,7 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
           }`}
           onClick={(e) => setDropOffLocationType("same")}
         >
-          Same drop off
+          Nội thành 
         </div>
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer mr-2 my-1 sm:mr-4 ${
@@ -79,7 +79,7 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
           }`}
           onClick={(e) => setDropOffLocationType("different")}
         >
-          Different drop off
+          Liên tỉnh
         </div>
       </div>
     );
@@ -102,8 +102,8 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
                       : "startDate"
                   )
                 }
-                placeHolder="City or Airport"
-                desc="Pick up location"
+                placeHolder="Điểm đón"
+                desc="Nhập địa điểm cụ thể"
                 className="flex-1"
               />
               {dropOffLocationType === "different" && (
@@ -111,8 +111,8 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
                   defaultValue={dropOffInputValue}
                   onChange={(e) => setDropOffInputValue(e)}
                   onInputDone={() => setFieldFocused("startDate")}
-                  placeHolder="City or Airport"
-                  desc="Drop off location"
+                  placeHolder="Điểm đến"
+                  desc="Nhập địa điểm cụ thể"
                   autoFocus={fieldFocused === "dropOffInput"}
                   className="flex-1"
                 />

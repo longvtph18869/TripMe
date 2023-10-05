@@ -69,7 +69,7 @@ const StaySearchForm: FC<StaySearchFormProps> = ({
         <GuestsInput
           defaultValue={guestValue}
           onChange={(data) => setGuestValue(data)}
-          className="flex-[1.2]"
+          className="flex-[1.5]"
         />
       </form>
     );

@@ -19,8 +19,8 @@ const LocationInput: FC<LocationInputProps> = ({
   autoFocus = false,
   onChange,
   onInputDone,
-  placeHolder = "Location",
-  desc = "Where are you going?",
+  placeHolder = "Địa điểm",
+  desc = "Bạn muốn đến đâu?",
   className = "nc-flex-1.5",
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -73,7 +73,7 @@ const LocationInput: FC<LocationInputProps> = ({
     return (
       <>
         <h3 className="block mt-2 sm:mt-0 px-4 sm:px-8 font-semibold text-base sm:text-lg text-neutral-800 dark:text-neutral-100">
-          Recent searches
+          Gợi ý cho bạn
         </h3>
         <div className="mt-2">
           {[

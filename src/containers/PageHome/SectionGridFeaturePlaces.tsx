@@ -21,10 +21,10 @@ export interface SectionGridFeaturePlacesProps {
 const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
   stayListings = DEMO_DATA,
   gridClass = "",
-  heading = "Featured places to stay",
+  heading = "Các địa điểm nổi bật",
   subHeading = "Popular places to stay that Chisfis recommends for you",
   headingIsCenter,
-  tabs = ["New York", "Tokyo", "Paris", "London"],
+  tabs = ["Hà nội", "Sapa", "Đà Lạt", "Hạ Long"],
 }) => {
   const renderCard = (stay: StayDataType) => {
     return <StayCard key={stay.id} data={stay} />;

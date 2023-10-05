@@ -33,7 +33,11 @@ const GuestsInput: FC<GuestsInputProps> = ({
   const [guestInfantsInputValue, setGuestInfantsInputValue] = useState(
     defaultValue.guestInfants || 0
   );
-
+  useEffect(() => {
+    defaultValue.guestAdults = 1;
+    defaultValue.guestChildren = 2;
+    defaultValue.guestInfants = 1;
+  },[])
   useEffect(() => {
     setGuestAdultsInputValue(defaultValue.guestAdults || 0);
     setGuestChildrenInputValue(defaultValue.guestChildren || 0);
@@ -74,7 +78,7 @@ const GuestsInput: FC<GuestsInputProps> = ({
             }`}
           >
             <Popover.Button
-              className={`flex-1 flex text-left items-center ${fieldClassName} space-x-3 `}
+              className={`flex-1 flex text-left items-center focus:outline-none ${fieldClassName} space-x-3 `}
               onClick={() => document.querySelector("html")?.click()}
             >
               <div className="text-neutral-300 dark:text-neutral-400">
@@ -95,10 +99,10 @@ const GuestsInput: FC<GuestsInputProps> = ({
               </div>
               <div className="flex-grow">
                 <span className="block xl:text-lg font-semibold">
-                  {totalGuests || ""} Guests
+                  {guestAdultsInputValue + " phòng, "+ guestChildrenInputValue + " người lớn, " + guestInfantsInputValue + " trẻ em" || ""}
                 </span>
                 <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
-                  {totalGuests ? "Guests" : "Add guests"}
+                  {totalGuests ? "" : "Thêm số người"}
                 </span>
               </div>
             </Popover.Button>
@@ -138,16 +142,14 @@ const GuestsInput: FC<GuestsInputProps> = ({
                 onChange={(value) => handleChangeData(value, "guestAdults")}
                 max={10}
                 min={1}
-                label="Adults"
-                desc="Ages 13 or above"
+                label="Phòng"
               />
               <NcInputNumber
                 className="w-full mt-6"
                 defaultValue={guestChildrenInputValue}
                 onChange={(value) => handleChangeData(value, "guestChildren")}
                 max={4}
-                label="Children"
-                desc="Ages 2–12"
+                label="Người lớn"
               />
 
               <NcInputNumber
@@ -155,8 +157,7 @@ const GuestsInput: FC<GuestsInputProps> = ({
                 defaultValue={guestInfantsInputValue}
                 onChange={(value) => handleChangeData(value, "guestInfants")}
                 max={4}
-                label="Infants"
-                desc="Ages 0–2"
+                label="Trẻ em"
               />
             </Popover.Panel>
           </Transition>

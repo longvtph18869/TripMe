@@ -18,56 +18,74 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
     href: "/listing-stay",
-    name: "New Yourk",
+    name: "Hà nội",
     taxonomy: "category",
-    count: 188288,
+    count: 245,
     thumbnail:
-      "https://images.pexels.com/photos/64271/queen-of-liberty-statue-of-liberty-new-york-liberty-statue-64271.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      "https://vcdn1-dulich.vnecdn.net/2022/05/11/hoan-kiem-lake-7673-1613972680-1508-1652253984.jpg?w=0&h=0&q=100&dpr=1&fit=crop&s=2wB1cBTUcNKuk68nrG6LMQ",
   },
   {
     id: "2",
     href: "/listing-stay",
-    name: "Singapore",
+    name: "Đà lạt",
     taxonomy: "category",
-    count: 188288,
+    count: 20,
     thumbnail:
-      "https://images.pexels.com/photos/7740160/pexels-photo-7740160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images2.thanhnien.vn/528068263637045248/2023/6/21/h2-1687347783328584450748.jpg",
   },
   {
-    id: "2",
+    id: "3",
     href: "/listing-stay",
-    name: "Paris",
+    name: "Sapa",
     taxonomy: "category",
-    count: 188288,
+    count: 45,
     thumbnail:
-      "https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://vcdn1-dulich.vnecdn.net/2022/04/18/dulichSaPa-1650268886-1480-1650277620.png?w=0&h=0&q=100&dpr=2&fit=crop&s=JTUw8njZ_Glkqf1itzjObg",
   },
   {
-    id: "2",
+    id: "4",
     href: "/listing-stay",
-    name: "London",
+    name: "Hạ Long",
     taxonomy: "category",
-    count: 188288,
+    count: 245,
     thumbnail:
-      "https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRI8Gvcsg47HzJ627VmWJnWHLV_93PSs2xMcE2u9tI2fo4kkqjqROEd5yD861LXMTKUcw4mHCGxLSXN5xAj74BDHp0KeCqT",
   },
   {
-    id: "2",
+    id: "5",
     href: "/listing-stay",
-    name: "Tokyo",
+    name: "Phú quốc",
     taxonomy: "category",
-    count: 188288,
+    count: 20,
     thumbnail:
-      "https://images.pexels.com/photos/4151484/pexels-photo-4151484.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      "https://lh5.googleusercontent.com/p/AF1QipPRSeurs7ihl5advBN4MRgMRGlDIlMYXoOIuP74=w548-h318-n-k-no",
   },
   {
-    id: "2",
+    id: "6",
     href: "/listing-stay",
-    name: "Maldives",
+    name: "Đà Nẵng",
     taxonomy: "category",
-    count: 188288,
+    count: 45,
     thumbnail:
-      "https://images.pexels.com/photos/3250613/pexels-photo-3250613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://lh5.googleusercontent.com/p/AF1QipOHiiMrNSKmt9A1JxBNQiJy3JNE8N19G0Ng5SFH=w548-h318-n-k-no",
+  },
+  {
+    id: "7",
+    href: "/listing-stay",
+    name: "Huế",
+    taxonomy: "category",
+    count: 45,
+    thumbnail:
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRr36oa8IHhvrHUCkKF7Xm0OmSkup1nOGHKpixqLggT0vseabNAhSm6-ZtXc0OTlMj0TFZ3GmdqY90-meeoG_PqXUFvl2br",
+  },
+  {
+    id: "8",
+    href: "/listing-stay",
+    name: "Ninh Bình",
+    taxonomy: "category",
+    count: 45,
+    thumbnail:
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRQm5ffdvMXJefkwTX_H0yjmE7wPZLhAbWXD0B6sCmtKhQD_GNazezM38gQcbHE9McQlt1wPrZApjtHz0IMJqgSBv2kreGg",
   },
 ];
 
@@ -127,7 +145,7 @@ function PageHome() {
 
       <div className="container relative space-y-24 mb-24 lg:space-y-28 lg:mb-28">
         {/* SECTION HERO */}
-        <SectionHero className="pt-10 lg:pt-16 lg:pb-16" />
+        <SectionHero className="pt-10 lg:pt-16 lg:pb-8" />
 
         {/* SECTION 1 */}
         <SectionSliderNewCategories

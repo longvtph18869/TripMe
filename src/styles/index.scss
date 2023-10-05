@@ -8,5 +8,15 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 .logo-en-fill {
-    fill: #ff5b00;
+  fill: #ff5b00;
+}
+small {
+  font-size: 100% !important;
+  font-weight: 700;
+}
+.CalendarMonth_caption strong {
+  font-weight: 700 !important;
+}
+ul::-webkit-scrollbar {
+  width: 0px !important;
 }
