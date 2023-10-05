@@ -16,6 +16,7 @@ export interface SectionGridHasMapProps {}
 const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
   const [currentHoverID, setCurrentHoverID] = useState<string | number>(-1);
   const [showFullMapFixed, setShowFullMapFixed] = useState(false);
+  const [itemIndex, setItemIndex] = useState(0);
 
   return (
     <div>
@@ -27,10 +28,10 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
             <TabFilters />
           </div>
           <div className="grid grid-cols-1 gap-8">
-            {DEMO_STAYS.map((item) => (
+            {DEMO_STAYS.map((item, index) => (
               <div
                 key={item.id}
-                onMouseEnter={() => setCurrentHoverID((_) => item.id)}
+                onMouseEnter={() => {setCurrentHoverID((_) => item.id) ; setItemIndex(index)}}
                 onMouseLeave={() => setCurrentHoverID((_) => -1)}
               >
                 <StayCardH data={item} />
@@ -78,6 +79,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
             <GoogleMapReact
               defaultZoom={14}
               defaultCenter={DEMO_STAYS[0].map}
+              center={DEMO_STAYS[itemIndex].map}
               bootstrapURLKeys={{
                 key: "AIzaSyCkryRJkNkCD_zt05BavQuk-YAWn8os_0A",
               }}
