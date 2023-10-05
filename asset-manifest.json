@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TripMe/static/css/main.7b448a4c.css",
-    "main.js": "/TripMe/static/js/main.461dde00.js",
+    "main.css": "/TripMe/static/css/main.cd76c2cc.css",
+    "main.js": "/TripMe/static/js/main.35c9dc3c.js",
     "static/js/496.e47ef3da.chunk.js": "/TripMe/static/js/496.e47ef3da.chunk.js",
     "static/media/appRightImg.png": "/TripMe/static/media/appRightImg.f5d741048b5794574f4c.png",
     "static/media/hero-right-3.png": "/TripMe/static/media/hero-right-3.25e989ed2b6ef0cfb25e.png",
@@ -30,7 +30,6 @@
     "static/media/3.png": "/TripMe/static/media/3.9f870f62a0081b2fa0d0.png",
     "static/media/13.png": "/TripMe/static/media/13.6e6c63e646f2cb8cf5af.png",
     "static/media/7.png": "/TripMe/static/media/7.7292cf7058bae40ed4de.png",
-    "static/media/Inter-Bold.ttf": "/TripMe/static/media/Inter-Bold.3e3cb905bf27a4c8c370.ttf",
     "static/media/Inter-SemiBold.ttf": "/TripMe/static/media/Inter-SemiBold.c6588ec1e3a1f399c5c0.ttf",
     "static/media/Inter-Medium.ttf": "/TripMe/static/media/Inter-Medium.18b8c68e64126db9ce88.ttf",
     "static/media/Inter-Light.ttf": "/TripMe/static/media/Inter-Light.e7dd1399358ca04ed457.ttf",
@@ -40,18 +39,8 @@
     "static/media/HIW1.png": "/TripMe/static/media/HIW1.bbef046fd6951afd08a7.png",
     "static/media/HIW3.png": "/TripMe/static/media/HIW3.b650d652a9db697619b9.png",
     "static/media/HIW2.png": "/TripMe/static/media/HIW2.f68577684c76e764a351.png",
-    "static/media/Poppins-Light.ttf": "/TripMe/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
-    "static/media/Poppins-Regular.ttf": "/TripMe/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
-    "static/media/Poppins-Medium.ttf": "/TripMe/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
     "static/media/la-brands-400.eot": "/TripMe/static/media/la-brands-400.908ce19d18187969b32f.eot",
     "static/media/la-brands-400.ttf": "/TripMe/static/media/la-brands-400.6ecea4826b87fafb97be.ttf",
-    "static/media/Poppins-SemiBold.ttf": "/TripMe/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
-    "static/media/Poppins-Bold.ttf": "/TripMe/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
-    "static/media/MerriweatherSans-SemiBold.ttf": "/TripMe/static/media/MerriweatherSans-SemiBold.0932567bbdff42fa57c1.ttf",
-    "static/media/MerriweatherSans-Bold.ttf": "/TripMe/static/media/MerriweatherSans-Bold.ad8b7aefcdf6b1e397c4.ttf",
-    "static/media/MerriweatherSans-Medium.ttf": "/TripMe/static/media/MerriweatherSans-Medium.c446e1ba317eec6bf87d.ttf",
-    "static/media/MerriweatherSans-Light.ttf": "/TripMe/static/media/MerriweatherSans-Light.8fa9990fc180395b0037.ttf",
-    "static/media/MerriweatherSans-Regular.ttf": "/TripMe/static/media/MerriweatherSans-Regular.9ab233598abd51d09b0d.ttf",
     "static/media/Image-18.png": "/TripMe/static/media/Image-18.ab0dbdc6d061f8eb3011.png",
     "static/media/la-solid-900.woff": "/TripMe/static/media/la-solid-900.893634871a6cbff72157.woff",
     "static/media/Image-15.png": "/TripMe/static/media/Image-15.0dc4002f995fe3639258.png",
@@ -65,13 +54,8 @@
     "static/media/Image-19.png": "/TripMe/static/media/Image-19.b8a551e5fcd0ec5f66f2.png",
     "static/media/SVG-subcribe2.png": "/TripMe/static/media/SVG-subcribe2.efb832b25bd6eca32484.png",
     "static/media/Image-9.png": "/TripMe/static/media/Image-9.d879028d45de09c9ca3b.png",
-    "static/media/Kodchasan-SemiBold.ttf": "/TripMe/static/media/Kodchasan-SemiBold.f531bf1a8af8703e4084.ttf",
     "static/media/Image-7.png": "/TripMe/static/media/Image-7.c88583919650f636b191.png",
     "static/media/la-brands-400.woff": "/TripMe/static/media/la-brands-400.925b340f49e65e8bab10.woff",
-    "static/media/Kodchasan-Medium.ttf": "/TripMe/static/media/Kodchasan-Medium.ae05ddb5d9b498b031c9.ttf",
-    "static/media/Kodchasan-Bold.ttf": "/TripMe/static/media/Kodchasan-Bold.bb390fdbc043e7bb5f7c.ttf",
-    "static/media/Kodchasan-Regular.ttf": "/TripMe/static/media/Kodchasan-Regular.d228555602a4c97b734f.ttf",
-    "static/media/Kodchasan-Light.ttf": "/TripMe/static/media/Kodchasan-Light.e7d0d62fcecd778c8f3b.ttf",
     "static/media/la-solid-900.woff2": "/TripMe/static/media/la-solid-900.3efd5ba15a279377d224.woff2",
     "static/media/Image-2.png": "/TripMe/static/media/Image-2.405c62ff9ad88c47e28c.png",
     "static/media/Image-10.png": "/TripMe/static/media/Image-10.93048ca791076288cf69.png",
@@ -107,12 +91,12 @@
     "index.html": "/TripMe/index.html",
     "static/media/Facebook.svg": "/TripMe/static/media/Facebook.1a707b6f565f3d903a12c1113f251b48.svg",
     "static/media/VectorHIW.svg": "/TripMe/static/media/VectorHIW.acaf608f045f9f6e33cbddebbae375e7.svg",
-    "main.7b448a4c.css.map": "/TripMe/static/css/main.7b448a4c.css.map",
-    "main.461dde00.js.map": "/TripMe/static/js/main.461dde00.js.map",
+    "main.cd76c2cc.css.map": "/TripMe/static/css/main.cd76c2cc.css.map",
+    "main.35c9dc3c.js.map": "/TripMe/static/js/main.35c9dc3c.js.map",
     "496.e47ef3da.chunk.js.map": "/TripMe/static/js/496.e47ef3da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b448a4c.css",
-    "static/js/main.461dde00.js"
+    "static/css/main.cd76c2cc.css",
+    "static/js/main.35c9dc3c.js"
   ]
 }
