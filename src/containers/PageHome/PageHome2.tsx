@@ -37,7 +37,7 @@ import SectionDowloadApp from "./SectionDowloadApp";
 const DEMO_CATS_2: TaxonomyType[] = [
   {
     id: "1",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Enjoy the great cold",
     taxonomy: "category",
     count: 188288,
@@ -46,7 +46,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
   },
   {
     id: "222",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Sleep in a floating way",
     taxonomy: "category",
     count: 188288,
@@ -55,7 +55,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
   },
   {
     id: "3",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "In the billionaire's house",
     taxonomy: "category",
     count: 188288,
@@ -64,7 +64,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
   },
   {
     id: "4",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Cool in the deep forest",
     taxonomy: "category",
     count: 188288,
@@ -73,7 +73,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
   },
   {
     id: "5",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "In the billionaire's house",
     taxonomy: "category",
     count: 188288,

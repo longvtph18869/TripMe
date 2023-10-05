@@ -10,7 +10,7 @@ export interface LocationStates {
   //
   "/listing-flights"?: {};
   //
-  "/listing-stay"?: {};
+  "/city/hanoi"?: {};
   "/listing-stay-map"?: {};
   "/listing-stay-detail"?: {};
   //

@@ -17,7 +17,7 @@ import SectionClientSay from "components/SectionClientSay/SectionClientSay";
 const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Hà nội",
     taxonomy: "category",
     count: 245,
@@ -26,7 +26,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "2",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Đà lạt",
     taxonomy: "category",
     count: 20,
@@ -35,7 +35,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "3",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Sapa",
     taxonomy: "category",
     count: 45,
@@ -44,7 +44,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "4",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Hạ Long",
     taxonomy: "category",
     count: 245,
@@ -53,7 +53,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "5",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Phú quốc",
     taxonomy: "category",
     count: 20,
@@ -62,7 +62,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "6",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Đà Nẵng",
     taxonomy: "category",
     count: 45,
@@ -71,7 +71,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "7",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Huế",
     taxonomy: "category",
     count: 45,
@@ -80,7 +80,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "8",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Ninh Bình",
     taxonomy: "category",
     count: 45,
@@ -92,7 +92,7 @@ const DEMO_CATS: TaxonomyType[] = [
 const DEMO_CATS_2: TaxonomyType[] = [
   {
     id: "1",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Enjoy the great cold",
     taxonomy: "category",
     count: 188288,
@@ -101,7 +101,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
   },
   {
     id: "222",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Sleep in a floating way",
     taxonomy: "category",
     count: 188288,
@@ -110,7 +110,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
   },
   {
     id: "3",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "In the billionaire's house",
     taxonomy: "category",
     count: 188288,
@@ -119,7 +119,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
   },
   {
     id: "4",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Cool in the deep forest",
     taxonomy: "category",
     count: 188288,
@@ -128,7 +128,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
   },
   {
     id: "5",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "In the billionaire's house",
     taxonomy: "category",
     count: 188288,

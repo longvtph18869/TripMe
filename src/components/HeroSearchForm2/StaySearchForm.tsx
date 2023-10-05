@@ -89,7 +89,7 @@ const StaySearchForm: FC<StaySearchFormProps> = ({
           onChange={(data) => setGuestValue(data)}
           className="flex-[1.2]"
           autoFocus={defaultFieldFocus === "guests"}
-          submitLink="/listing-stay"
+          submitLink="/city/hanoi"
         />
       </form>
     );

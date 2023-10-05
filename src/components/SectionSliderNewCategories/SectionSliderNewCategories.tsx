@@ -23,7 +23,7 @@ export interface SectionSliderNewCategoriesProps {
 const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Nature House",
     taxonomy: "category",
     count: 17288,

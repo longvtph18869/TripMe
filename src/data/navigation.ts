@@ -195,14 +195,14 @@ export const NAVIGATION_DEMO: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/listing-stay",
+    href: "/city/hanoi",
     name: "Tất cả",
     type: "dropdown",
     isNew: true,
     children: [
       {
         id: ncNanoId(),
-        href: "/listing-stay",
+        href: "/city/hanoi",
         name: "Stay listing",
         type: "dropdown",
         children: [

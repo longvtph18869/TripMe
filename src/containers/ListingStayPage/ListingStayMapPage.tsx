@@ -21,7 +21,7 @@ const ListingStayMapPage: FC<ListingStayMapPageProps> = ({
       data-nc-id="ListingStayMapPage"
     >
       <Helmet>
-        <title>Chisfis || Booking React Template</title>
+        <title>Du lịch Hà Nội - Khám phá các điểm tham quan và hoạt động 2023</title>
       </Helmet>
       <BgGlassmorphism />
 

@@ -696,7 +696,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({
     >
       {/* SINGLE HEADER */}
       <>
-        <header className="container 2xl:px-14 rounded-md sm:rounded-xl">
+        <header className="container  rounded-md sm:rounded-xl">
           <div className="relative grid grid-cols-3 sm:grid-cols-4 gap-1 sm:gap-2">
             <div
               className="col-span-2 row-span-3 sm:row-span-2 relative rounded-md sm:rounded-xl overflow-hidden cursor-pointer"
@@ -749,7 +749,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({
                 />
               </svg>
               <span className="ml-2 text-neutral-800 text-sm font-medium">
-                Show all photos
+                Thư viện ảnh
               </span>
             </div>
           </div>
