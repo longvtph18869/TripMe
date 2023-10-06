@@ -7,9 +7,10 @@ import NcImage from "shared/NcImage/NcImage";
 // <--- NavItemType --->
 export interface MegamenuItem {
   id: string;
-  image: string;
+  image?: string;
   title: string;
   items: NavItemType[];
+  icon?: string
 }
 export interface NavItemType {
   id: string;
@@ -19,6 +20,7 @@ export interface NavItemType {
   targetBlank?: boolean;
   children?: NavItemType[];
   megaMenu?: MegamenuItem[];
+  icon?: boolean;
   type?: "dropdown" | "megaMenu" | "none";
 }
 
@@ -83,25 +85,40 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
                 static
                 className={`nc-will-change-transform sub-menu absolute transform z-10 w-screen max-w-sm px-4 pt-3 sm:px-0 lg:max-w-max ${classPanel}`}
               >
-                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black dark:ring-white ring-opacity-5 dark:ring-opacity-10 text-sm">
+                <div style={{ maxHeight: "340px" }} className="overflow-auto rounded-lg shadow-lg ring-1 ring-black dark:ring-white ring-opacity-5 dark:ring-opacity-10 text-sm">
                   <div
-                    className={`relative bg-white dark:bg-neutral-900 px-3 py-6 grid gap-1 grid-cols-${menu.megaMenu?.length}`}
+                    className={`relative bg-white dark:bg-neutral-900 px-3 py-6 grid gap-1 grid-cols-5`}
                   >
                     {menu.megaMenu?.map((item) => (
-                      <div key={item.id}>
+                      <> {item.image && <div key={item.id}>
                         <div className="px-2">
                           <NcImage
                             containerClassName="w-36 h-24 rounded-lg overflow-hidden relative flex"
                             src={item.image}
                           />
                         </div>
-                        <p className="font-medium text-neutral-900 dark:text-neutral-200 py-1 px-2 my-2">
+                        <p className="font-medium text-neutral-900 dark:text-neutral-200 px-2 my-1">
                           {item.title}
                         </p>
-                        <ul className="grid space-y-1">
+                        {/* <ul className="grid space-y-1">
                           {item.items.map(renderMegaMenuNavlink)}
-                        </ul>
-                      </div>
+                        </ul> */}
+                      </div>}
+                        {!item.image && <><div><NavLink
+                          end
+                          rel="noopener noreferrer"
+                          className={({ isActive }) =>
+                            `inline-flex text-base items-center py-1 px-2 rounded font-normal text-neutral-6000 dark:text-neutral-300 `
+                          }
+                          to={item.title || ""}
+                        >
+                          <img className="mr-2" width={16} height={16} src={item.icon} alt="" />
+                          <p className="font-medium">{item.title}</p>
+                        </NavLink>
+                          <ul className="grid space-y-1" style={{maxWidth:"240px"}}>
+                            <li className="ml-4 text-base items-center py-1 px-2 rounded font-normal text-neutral-6000 dark:text-neutral-300 ">{item.items.map(renderMegaMenuNavlink)}</li>
+                          </ul> </div></>}
+                      </>
                     ))}
                   </div>
                 </div>
@@ -137,9 +154,8 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
     return (
       <Popover
         as="li"
-        className={`menu-item menu-dropdown relative ${
-          menuDropdown.isNew ? "menuIsNew_lv1" : ""
-        }`}
+        className={`menu-item menu-dropdown relative ${menuDropdown.isNew ? "menuIsNew_lv1" : ""
+          }`}
         onMouseEnter={() => onMouseEnterMenu(menuDropdown.id)}
         onMouseLeave={() => onMouseLeaveMenu(menuDropdown.id)}
       >
@@ -239,13 +255,12 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
         target={item.targetBlank ? "_blank" : undefined}
         rel="noopener noreferrer"
         className={({ isActive }) =>
-          `flex items-center font-normal text-neutral-6000 dark:text-neutral-300 py-2 px-4 rounded-md hover:text-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 ${
-            isActive ? "!font-medium  dark:!text-neutral-100" : ""
+          `flex items-center font-normal text-neutral-6000 dark:text-neutral-300 py-2 px-4 rounded-md hover:text-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 ${isActive ? "!font-medium  dark:!text-neutral-100" : ""
           }`
         }
         to={item.href || ""}
       >
-        {item.name}
+        <p className="inline-flex text-base items-center px-2 rounded font-normal text-neutral-6000 dark:text-neutral-300 ">{item.name}</p>
         {item.type && (
           <ChevronDownIcon
             className="ml-2 h-4 w-4 text-neutral-500"
@@ -274,6 +289,7 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
         }
         to={item.href || "/"}
       >
+        {item.icon && <svg className="mr-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.51 8.935a2.507 2.507 0 11-5.014 0 2.507 2.507 0 015.013 0zm-1.4 0a1.107 1.107 0 11-2.214 0 1.107 1.107 0 012.213 0z" clip-rule="evenodd"></path> <path fill-rule="evenodd" d="M17 9c0 4.26-4.321 7.563-6.173 8.783a1.492 1.492 0 01-1.654 0C7.321 16.563 3 13.26 3 9a7 7 0 0114 0zm-1.4 0c0 1.65-.843 3.224-2.05 4.613-1.194 1.376-2.62 2.426-3.494 3a.1.1 0 01-.056.02.1.1 0 01-.056-.02c-.873-.574-2.3-1.624-3.495-3C5.243 12.224 4.4 10.65 4.4 9a5.6 5.6 0 0111.2 0z" clip-rule="evenodd"></path></svg>}
         {item.name}
         {/* {item.type && (
           <ChevronDownIcon

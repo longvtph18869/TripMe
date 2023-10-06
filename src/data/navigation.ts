@@ -1,62 +1,123 @@
 import { MegamenuItem, NavItemType } from "shared/Navigation/NavigationItem";
 import ncNanoId from "utils/ncNanoId";
 import __megamenu from "./jsons/__megamenu.json";
-
+import tour from "images/menu/tour.webp";
+import ticket from "images/menu/ticket.webp";
+import hotel from "images/menu/hotel.webp";
+import car from "images/menu/car.webp";
+import more from "images/menu/more.webp";
 const megaMenuDemo: MegamenuItem[] = [
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    title: "Company",
-    items: __megamenu.map((i) => ({
-      id: ncNanoId(),
-      href: "/unique_id_",
-      name: i.Company,
-    })),
+      "https://lh5.googleusercontent.com/p/AF1QipN3-_0wrzFsf30vYg5nR6mwLroFyNp-qYsnV6B6=w540-h312-n-k-no",
+    title: "Hà Nội",
+    items: [],
   },
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    title: "App Name",
-    items: __megamenu.map((i) => ({
-      id: ncNanoId(),
-      href: "/unique_id_",
-      name: i.AppName,
-    })),
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQu0B8E2iXW_zJrIIa55l706a8umjbqX5VZik5WJTwjUezeHDIrop6ieDQckRLVbGTPOpm6JGbAqT8XcgIdTRW22ArZUMDW",
+    title: "TP Hồ Chí Minh",
+    items: [],
   },
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/5059013/pexels-photo-5059013.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    title: "City",
-    items: __megamenu.map((i) => ({
-      id: ncNanoId(),
-      href: "/unique_id_",
-      name: i.City,
-    })),
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTjCNG_QoeQdCYaEnMB5-Ctsse5KuFrV9e70yQh2FzrtaVwZAEDK---b-Djca7oqELV3Xs7-NY8CkXWac5ndjBWIWbUb6-Z",
+    title: "Đà Nẵng",
+    items: [],
   },
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/5159141/pexels-photo-5159141.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    title: "Contruction",
-    items: __megamenu.map((i) => ({
-      id: ncNanoId(),
-      href: "/unique_id_",
-      name: i.Contruction,
-    })),
+      "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRI8Gvcsg47HzJ627VmWJnWHLV_93PSs2xMcE2u9tI2fo4kkqjqROEd5yD861LXMTKUcw4mHCGxLSXN5xAj74BDHp0KeCqT",
+    title: "Hạ Long",
+    items: [],
   },
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/7473041/pexels-photo-7473041.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    title: "Country",
-    items: __megamenu.map((i) => ({
-      id: ncNanoId(),
-      href: "/unique_id_",
-      name: i.Country,
-    })),
+      "https://lh5.googleusercontent.com/p/AF1QipPRSeurs7ihl5advBN4MRgMRGlDIlMYXoOIuP74=w540-h312-n-k-no",
+    title: "Phú Quốc",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTs0GDcFqwlhdCVdhBQfqZS2p290tjkoP3V0Tw_UEDAM3n4cli7wTas5j4X6NZ_EN8NLDUINajXevxuk5DViH9cCqIGE65x",
+    title: "Nha Trang",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://lh6.googleusercontent.com/proxy/JZPEjbjYoFqQpsIOftGUwPUz-77_sv2lLGLFr5sP7VTtOZooprREfUFmqTmo8XHxCRQOw7guF-vGLthg4QgA-T1aerde2K1PQrwZrcpkxcjKCXeKxaVikYtXTiDUgPOch0Gr2UDSDoIEYGNh2-OQSZB5LzBSbA=w540-h312-n-k-no",
+    title: "Hội An",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNU7XsjaroyEvNAdMz00RLzL6QVeMEqJFZHt5cU=w540-h312-n-k-no",
+    title: "Sapa",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSchjsugz-aoCvI45LNwI3HdR5FQIUZ6-NKUWD-WlhtvrUXT1STzF6wPsD7fQ9NJJL5pDfcY7Io2WEmk6YwQLyFCLFCP9OY",
+    title: "Đà Lạt",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTUxxEbbXKswdsvn6x5CyClnqUPEWWZSYhB3YLckvtlhdJxf-pMFNrZdmncTvbjDATqYUqvElOp1wbbtB89tFwTcUp_79AA",
+    title: "Huế",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRQm5ffdvMXJefkwTX_H0yjmE7wPZLhAbWXD0B6sCmtKhQD_GNazezM38gQcbHE9McQlt1wPrZApjtHz0IMJqgSBv2kreGg",
+    title: "Ninh Bình",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNRmDvork--5JWkGhtM4xJU6HmcdNlq6eK41DvF=w540-h312-n-k-no",
+    title: "Vũng Tàu",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdOaBuPtXq-9ETAPMgNtHVD1AzH09S3tHcA&usqp=CAU",
+    title: "Côn Đảo",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://lh5.googleusercontent.com/proxy/0diPJjN9qaBKIKjeTUrLa0xZe_U54nyoPCCgX06VT_jXy4aA2Dpxw4uBxvDXdAxQl5cR_rY3ehxQXpggIiusgS-IgDnR6KxuspMjsNH1ybaz7ioWvtwZZH_4OCZ8oQpeaGf5_VRMyR8pbeDTAev1qIePUCD6Vw=w540-h312-n-k-no",
+    title: "Tokyo",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipOtUzHxfhjNLwjGZPbiDIvfa77VJmx-KcxdupzX=w540-h312-n-k-no",
+    title: "Hồng Kông",
+    items: [],
+  },
+  {
+    id: ncNanoId(),
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipMtbCUe8AsWobahGfb2chQgt5Gne9VjaIDrUVjf=w540-h312-n-k-no",
+    title: "Singapore",
+    items: [],
   },
 ];
 
@@ -83,211 +144,107 @@ const demoChildMenus: NavItemType[] = [
 const otherPageChildMenus: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/blog",
-    name: "Blog Page",
+    href: "/city/hanoi",
+    name: "Taxi",
   },
   {
     id: ncNanoId(),
-    href: "/blog-single",
-    name: "Blog Single",
+    href: "/city/hanoi",
+    name: "Xe buýt",
   },
   {
     id: ncNanoId(),
-    href: "/about",
-    name: "About",
-  },
-  {
-    id: ncNanoId(),
-    href: "/contact",
-    name: "Contact us",
-  },
-  {
-    id: ncNanoId(),
-    href: "/login",
-    name: "Login",
-  },
-  {
-    id: ncNanoId(),
-    href: "/signup",
-    name: "Signup",
-  },
-  {
-    id: ncNanoId(),
-    href: "/subscription",
-    name: "Subscription",
+    href: "/city/hanoi",
+    name: "Thuê xe tự lái",
   },
 ];
 
 const templatesChildrenMenus: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/add-listing-1",
-    name: "Add Listings",
-    type: "dropdown",
-    children: [
-      {
-        id: ncNanoId(),
-        href: "/add-listing-1",
-        name: "Add Listings 1",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-2",
-        name: "Add Listings 2",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-3",
-        name: "Add Listings 3",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-4",
-        name: "Add Listings 4",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-5",
-        name: "Add Listings 5",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-6",
-        name: "Add Listings 6",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-7",
-        name: "Add Listings 7",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-8",
-        name: "Add Listings 8",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-9",
-        name: "Add Listings 9",
-      },
-      {
-        id: ncNanoId(),
-        href: "/add-listing-10",
-        name: "Add Listings 10",
-      },
-    ],
+    href: "/city/hanoi",
+    name: "Tour",
   },
   //
-  { id: ncNanoId(), href: "/checkout", name: "Checkout" },
-  { id: ncNanoId(), href: "/pay-done", name: "Pay done" },
+  { id: ncNanoId(), href: "/city/hanoi", name: "Du thuyền" },
+  { id: ncNanoId(), href: "/city/hanoi", name: "Phiêu lưu & Khám phá thiên nhiên" },
   //
-  { id: ncNanoId(), href: "/author", name: "Author Page" },
-  { id: ncNanoId(), href: "/account", name: "Account Page" },
+  { id: ncNanoId(), href: "/city/hanoi", name: "Hoạt động dưới nước" },
+  { id: ncNanoId(), href: "/city/hanoi", name: "Trải Nghiệm văn hóa" },
+  { id: ncNanoId(), href: "/city/hanoi", name: "Massage & Suối nước nóng" },
 ];
-
+const megaMenuAll: MegamenuItem[] = [
+  {
+    id: ncNanoId(),
+    title: "Tour & Trải nghiệm",
+    icon: tour,
+    items: __megamenu.tour.map((i) => ({
+      id: ncNanoId(),
+      href: "/unique_id_",
+      name: i,
+    })),
+  },
+  {
+    id: ncNanoId(),
+    title: "Vé tham quan",
+    icon: ticket,
+    items: __megamenu.ticket.map((i) => ({
+      id: ncNanoId(),
+      href: "/unique_id_",
+      name: i,
+    })),
+  },
+  {
+    id: ncNanoId(),
+    title: "Lưu trú",
+    icon: hotel,
+    items: __megamenu.hotel.map((i) => ({
+      id: ncNanoId(),
+      href: "/unique_id_",
+      name: i,
+    })),
+  },
+  {
+    id: ncNanoId(),
+    title: "Di chuyển",
+    icon: car,
+    items: __megamenu.car.map((i) => ({
+      id: ncNanoId(),
+      href: "/unique_id_",
+      name: i,
+    })),
+  },
+  {
+    id: ncNanoId(),
+    icon: more,
+    title: "Thêm nhiều khám phá",
+    items: __megamenu.more.map((i) => ({
+      id: ncNanoId(),
+      href: "/unique_id_",
+      name: i,
+    })),
+  },
+];
 export const NAVIGATION_DEMO: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/unique_id_",
+    href: "/TripMe",
     name: "Bạn muốn đi đâu?",
     type: "megaMenu",
+    icon: true,
     megaMenu: megaMenuDemo,
   },
   {
     id: ncNanoId(),
     href: "/city/hanoi",
     name: "Tất cả",
-    type: "dropdown",
+    type: "megaMenu",
     isNew: true,
-    children: [
-      {
-        id: ncNanoId(),
-        href: "/city/hanoi",
-        name: "Stay listing",
-        type: "dropdown",
-        children: [
-          { id: ncNanoId(), href: "/listing-stay", name: "Stay page" },
-          {
-            id: ncNanoId(),
-            href: "/listing-stay-map",
-            name: "Stay page (map)",
-          },
-          { id: ncNanoId(), href: "/listing-stay-detail", name: "Stay Detail" },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-experiences",
-        name: "Experiences listing",
-        type: "dropdown",
-        children: [
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences",
-            name: "Experiences page",
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences-map",
-            name: "Experiences page (map)",
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences-detail",
-            name: "Experiences Detail",
-          },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-car",
-        name: "Cars listing",
-        type: "dropdown",
-        children: [
-          { id: ncNanoId(), href: "/listing-car", name: "Cars page" },
-          { id: ncNanoId(), href: "/listing-car-map", name: "Cars page (map)" },
-          { id: ncNanoId(), href: "/listing-car-detail", name: "Car Detail" },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-real-estate",
-        name: "Real Estate Listings",
-        isNew: true,
-        type: "dropdown",
-        children: [
-          {
-            id: ncNanoId(),
-            href: "/listing-real-estate",
-            name: "Real Estate Listings",
-            isNew: true,
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-real-estate-map",
-            name: "Real Estate Maps",
-            isNew: true,
-          },
-        ],
-      },
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-flights",
-        name: "Flights listing",
-        isNew: true,
-      },
-    ],
+    megaMenu: megaMenuAll,
   },
   {
     id: ncNanoId(),
-    href: "/author",
+    href: "/city/hanoi",
     name: "Tour và Trải nghiệm",
     type: "dropdown",
     children: templatesChildrenMenus,
@@ -295,37 +252,37 @@ export const NAVIGATION_DEMO: NavItemType[] = [
 
   {
     id: ncNanoId(),
-    href: "/blog",
+    href: "/city/hanoi",
     name: "Khách sạn",
-    type: "dropdown",
-    children: otherPageChildMenus,
+    type: "none",
+    // children: otherPageChildMenus,
   },
   {
     id: ncNanoId(),
-    href: "/blog",
+    href: "/city/hanoi",
     name: "Đặt xe",
     type: "dropdown",
     children: otherPageChildMenus,
   },
   {
     id: ncNanoId(),
-    href: "/blog",
+    href: "/city/hanoi",
     name: "Máy bay",
-    type: "dropdown",
-    children: otherPageChildMenus,
+    type: "none",
+    // children: otherPageChildMenus,
   },
   {
     id: ncNanoId(),
-    href: "/blog",
+    href: "/city/hanoi",
     name: "Ẩm thực",
-    type: "dropdown",
-    children: otherPageChildMenus,
+    type: "none",
+    // children: otherPageChildMenus,
   },
   {
     id: ncNanoId(),
-    href: "/blog",
+    href: "/city/hanoi",
     name: "Dịch vụ du lịch",
-    type: "dropdown",
-    children: otherPageChildMenus,
+    type: "none",
+    // children: otherPageChildMenus,
   },
 ];
