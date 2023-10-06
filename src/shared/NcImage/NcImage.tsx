@@ -10,10 +10,12 @@ import PlaceIcon from "./PlaceIcon";
 
 export interface NcImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   containerClassName?: string;
+  before?: boolean
 }
 
 const NcImage: FC<NcImageProps> = ({
   containerClassName = "",
+  before = "",
   alt = "nc-imgs",
   src = "",
   className = "object-cover w-full h-full",
@@ -87,7 +89,7 @@ const NcImage: FC<NcImageProps> = ({
 
   return (
     <div
-      className={`nc-NcImage ${containerClassName}`}
+      className={`nc-NcImage ${containerClassName}  ${before ? "city-image" : ""}`}
       data-nc-id="NcImage"
       ref={_containerRef}
     >

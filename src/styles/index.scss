@@ -20,3 +20,14 @@ small {
 ul::-webkit-scrollbar {
   width: 0px !important;
 }
+header .city-image:before {
+  background: linear-gradient(90deg,rgba(0,0,0,.3),rgba(0,0,0,.3) .01%,transparent 84%);
+  border-radius: 16px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

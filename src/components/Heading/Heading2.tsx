@@ -9,13 +9,13 @@ export interface Heading2Props {
 
 const Heading2: React.FC<Heading2Props> = ({
   className = "",
-  heading = "Stays in Tokyo",
+  heading = "Hà Nội có gì đặc biệt?",
   subHeading,
 }) => {
   return (
     <div className={`mb-12 lg:mb-16 ${className}`}>
       <h2 className="text-4xl font-semibold">{heading}</h2>
-      {subHeading ? (
+      {/* {subHeading ? (
         subHeading
       ) : (
         <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
@@ -24,7 +24,7 @@ const Heading2: React.FC<Heading2Props> = ({
           Aug 12 - 18
           <span className="mx-2">·</span>2 Guests
         </span>
-      )}
+      )} */}
     </div>
   );
 };
