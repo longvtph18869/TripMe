@@ -86,13 +86,13 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
           )}
 
           <div className="fixed xl:sticky top-0  left-0 w-full h-full  rounded-md overflow-hidden">
-            <div className="absolute bottom-5 left-3 lg:bottom-auto lg:top-2.5 lg:left-1/2 transform lg:-translate-x-1/2 py-2 px-4 bg-white dark:bg-neutral-800 shadow-xl z-10 rounded-2xl min-w-max">
+            {/* <div className="absolute bottom-5 left-3 lg:bottom-auto lg:top-2.5 lg:left-1/2 transform lg:-translate-x-1/2 py-2 px-4 bg-white dark:bg-neutral-800 shadow-xl z-10 rounded-2xl min-w-max">
               <Checkbox
                 className="text-xs xl:text-sm"
                 name="xx"
                 label="Search as I move the map"
               />
-            </div>
+            </div> */}
 
             {/* BELLOW IS MY GOOGLE API KEY -- PLEASE DELETE AND TYPE YOUR API KEY */}
             <GoogleMapReact
