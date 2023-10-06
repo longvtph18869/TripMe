@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TripMe/static/css/main.ac8c392d.css",
-    "main.js": "/TripMe/static/js/main.d13a802d.js",
+    "main.css": "/TripMe/static/css/main.52f56233.css",
+    "main.js": "/TripMe/static/js/main.90ef2fc7.js",
     "static/js/496.e47ef3da.chunk.js": "/TripMe/static/js/496.e47ef3da.chunk.js",
     "static/media/appRightImg.png": "/TripMe/static/media/appRightImg.f5d741048b5794574f4c.png",
     "static/media/hero-right-3.png": "/TripMe/static/media/hero-right-3.25e989ed2b6ef0cfb25e.png",
@@ -96,12 +96,12 @@
     "static/media/hotel.webp": "/TripMe/static/media/hotel.c33118fa5980937c1c20.webp",
     "static/media/more.webp": "/TripMe/static/media/more.5947dbb704bfdaebe179.webp",
     "static/media/VectorHIW.svg": "/TripMe/static/media/VectorHIW.acaf608f045f9f6e33cbddebbae375e7.svg",
-    "main.ac8c392d.css.map": "/TripMe/static/css/main.ac8c392d.css.map",
-    "main.d13a802d.js.map": "/TripMe/static/js/main.d13a802d.js.map",
+    "main.52f56233.css.map": "/TripMe/static/css/main.52f56233.css.map",
+    "main.90ef2fc7.js.map": "/TripMe/static/js/main.90ef2fc7.js.map",
     "496.e47ef3da.chunk.js.map": "/TripMe/static/js/496.e47ef3da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac8c392d.css",
-    "static/js/main.d13a802d.js"
+    "static/css/main.52f56233.css",
+    "static/js/main.90ef2fc7.js"
   ]
 }
