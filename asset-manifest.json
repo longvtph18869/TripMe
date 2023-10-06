@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TripMe/static/css/main.ac8c392d.css",
-    "main.js": "/TripMe/static/js/main.ebaedb56.js",
+    "main.js": "/TripMe/static/js/main.d13a802d.js",
     "static/js/496.e47ef3da.chunk.js": "/TripMe/static/js/496.e47ef3da.chunk.js",
     "static/media/appRightImg.png": "/TripMe/static/media/appRightImg.f5d741048b5794574f4c.png",
     "static/media/hero-right-3.png": "/TripMe/static/media/hero-right-3.25e989ed2b6ef0cfb25e.png",
@@ -87,16 +87,21 @@
     "static/media/appSvg2.png": "/TripMe/static/media/appSvg2.c14918ee760556e961b8.png",
     "static/media/Google.svg": "/TripMe/static/media/Google.14c804f8c298e718f222f1e6e52b1067.svg",
     "static/media/Twitter.svg": "/TripMe/static/media/Twitter.942c0e43717670a23fa4fe889627ead2.svg",
+    "static/media/tour.webp": "/TripMe/static/media/tour.658baf92cd75141aa7f3.webp",
     "static/media/mastercard.svg": "/TripMe/static/media/mastercard.92c5b76a9ebc565de87902533102fc82.svg",
+    "static/media/car.webp": "/TripMe/static/media/car.1b6eaf9490da6a93bf90.webp",
     "index.html": "/TripMe/index.html",
     "static/media/Facebook.svg": "/TripMe/static/media/Facebook.1a707b6f565f3d903a12c1113f251b48.svg",
+    "static/media/ticket.webp": "/TripMe/static/media/ticket.d131a1665b2c01da27c9.webp",
+    "static/media/hotel.webp": "/TripMe/static/media/hotel.c33118fa5980937c1c20.webp",
+    "static/media/more.webp": "/TripMe/static/media/more.5947dbb704bfdaebe179.webp",
     "static/media/VectorHIW.svg": "/TripMe/static/media/VectorHIW.acaf608f045f9f6e33cbddebbae375e7.svg",
     "main.ac8c392d.css.map": "/TripMe/static/css/main.ac8c392d.css.map",
-    "main.ebaedb56.js.map": "/TripMe/static/js/main.ebaedb56.js.map",
+    "main.d13a802d.js.map": "/TripMe/static/js/main.d13a802d.js.map",
     "496.e47ef3da.chunk.js.map": "/TripMe/static/js/496.e47ef3da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac8c392d.css",
-    "static/js/main.ebaedb56.js"
+    "static/js/main.d13a802d.js"
   ]
 }
